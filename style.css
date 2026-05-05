@@ -1,0 +1,175 @@
+body {
+    margin: 0;
+    height: 100vh;
+    background-image: url(images/cute.jpeg);
+    background-size: cover;
+    background-position: center;
+
+    display: grid;
+    height: 100vh;
+    place-items: center;
+}
+
+.container {
+    width: 700px;
+    height: 700px;
+    background-image: url(images/square-bg.jpeg);
+    box-sizing: border-box;
+    -webkit-box-align: center;
+    backdrop-filter: blur(10px);
+    box-sizing: border-box;
+    border-radius: 2%;
+    place-content: center;
+    text-align: center;
+}
+
+.logo{
+    display: grid;
+    place-items: center;
+    font-family: 'Inter', cursive;
+    font-weight: 600;
+    font-size: 49px;
+    height: 100px;
+    color: #44263d;
+}
+
+.tagline{
+    font-family: 'kalam', cursive;
+    font-kerning: auto;
+    font-size: 28px;
+    text-align: center;
+}
+button {
+    background: #44052f;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.title {
+    font-size: 1.4rem;
+    margin-bottom: 20px;
+    font-family: 'Georgia', cursive;
+}
+
+.mood-grid {
+    display: grid;
+    grid-template-columns: repeat(1, 3fr);
+    gap: 10px;
+    width: fit-content;
+    margin: 0 auto;
+}
+
+.mood {
+    width: 100%;
+    max-width: 200px;
+    box-sizing: content-box;
+    border: 1px solid #44052f;
+    padding: 10px;
+    font-size: 1rem;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(192, 132, 252,0.3);
+}
+
+.mood.hover {
+    background-color: #44263d;
+}
+
+.back-btn {
+    background: transparent;
+    color: #44052f;
+    border: none;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-bottom: 15px;
+    justify-self: start;
+}
+
+.vibe-grid {
+    display: grid;
+    grid-template-columns: repeat(1, 3fr);
+    gap: 10px;
+    width: fit-content;
+    margin: 0 auto;
+}
+
+.vibe {
+    width: 100%;
+    max-width: 200px;
+    box-sizing: content-box;
+    border: 1px solid #44052f;
+    padding: 10px;
+    font-size: 1rem;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(192, 132, 252,0.3);
+}
+
+.vibe.hover {
+    background-color: #44263d;
+}
+
+.result {
+    font-family: "Georgia", cursive;
+    color: rgb(83, 7, 26);
+    font-size: 60px;
+    font-weight: 900;
+    font-kerning: auto;
+}
+/* container for songs */
+#songs {
+    width: 100%;
+    margin-top: 20px;
+}
+
+/* song card */
+.song-card {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    padding: 12px;
+    margin-bottom: 12px;
+
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 15px;
+
+    backdrop-filter: blur(10px);
+
+    box-shadow: 0 0 15px rgba(192, 132, 252, 0.2);
+
+    transition: 0.3s;
+}
+
+/* hover glow */
+.song-card:hover {
+    transform: scale(1.02);
+    box-shadow: 0 0 25px rgba(192, 132, 252, 0.5);
+}
+
+/* album image */
+.song-card img {
+    width: 55px;
+    height: 55px;
+    border-radius: 10px;
+}
+
+/* text */
+.song-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.song-title {
+    font-size: 0.95rem;
+    font-weight: bold;
+    color: rgb(43, 5, 46);
+}
+
+.song-artist {
+    font-size: 0.8rem;
+    color: #6e419b;
+}
+
